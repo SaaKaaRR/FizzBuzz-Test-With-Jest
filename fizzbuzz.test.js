@@ -20,4 +20,9 @@ describe("fizzbuzz", () => {
     const result = fizzbuzz(1);
     expect(result).toBe(1);
   });
+  it("should throw an error if the input is not a number", () => {
+    expect(() => {
+      fizzbuzz("a");
+    }).toThrow;
+  });
 });
